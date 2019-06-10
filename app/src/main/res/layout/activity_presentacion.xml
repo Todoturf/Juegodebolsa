@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".PresentacionActivity">
+
+    <ImageView
+        android:id="@+id/imgPresentacion"
+        android:layout_width="365dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtPresentacion1"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/txtPresentacion1"
+        app:layout_constraintTop_toBottomOf="@+id/txtPresentacion1"
+        app:srcCompat="@drawable/usstockexchange" />
+
+    <TextView
+        android:id="@+id/txtPresentacion1"
+        android:layout_width="365dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="@string/txtPresentacion1"
+        android:textColorHint="#FFEB3B"
+        android:textSize="72sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPresentacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:hint="@string/txtPresentacion2"
+        android:textColorHint="#EEF436"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgPresentacion"
+        app:layout_constraintStart_toStartOf="@+id/imgPresentacion"
+        app:layout_constraintTop_toBottomOf="@+id/imgPresentacion" />
+</android.support.constraint.ConstraintLayout>

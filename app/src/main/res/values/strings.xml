@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Juego de bolsa</string>
+    <string name="txtTituloJuegodeBolsa">Juego de Bolsa</string>
+    <string name="editNombreJugador">Nombre de jugador</string>
+    <string name="txtnombreJugador">Introduce tu nombre</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="txtPresentacion1">Stock Exchange APP</string>
+    <string name="txtPresentacion2">Designed by Red Rocks Solutions Corporation</string>
+    <string name="txtNombreJugadorBolsa" />
+    <string name="btnCompro">Compro</string>
+    <string name="btnVendo">Vendo</string>
+    <string name="txtValorActualAccion" />
+    <string name="txtValor">Valor actual de la acción</string>
+    <string name="txtAcciones">Acciones</string>
+    <string name="txtCapital">Capital</string>
+    <string name="txtValorAcciones">10000</string>
+    <string name="txtTotal">120000</string>
+    <string name="txtValorCapital">1125</string>
+    <string name="txtNumeroAcciones" />
+
+<string name="broker">Broker</string>
+<string name="nombre">Nombre</string>
+<string name="jugar">Jugar</string>
+<string name="comprar">Comprar</string>
+<string name="vender">Vender</string>
+<string name="acciones">Acciones</string>
+<string name="capital">Capital</string>
+<string name="ehnorabuena">Enhorabuena!!!</string>
+<string name="nuevo_record">Nuevo Record</string>
+<string name="salir">Salir</string>
+<string name="jugar_otra_vez">Jugar otra vez</string>
+<string name="casiConsigues">Casi lo consigues</string>
+<string name="intentalo_de_nuevo">Inténtalo de nuevo</string>
+<string name="el_record_es">El record está en</string>
+</resources>

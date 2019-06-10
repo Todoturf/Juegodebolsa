@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f51b5"
+    tools:context=".Bolsa">
+
+    <TextView
+        android:id="@+id/txtNombreJugadorBolsa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:hint="@string/txtNombreJugadorBolsa"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTituloJuegodeBolsa2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtTituloJuegodeBolsa2"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloJuegodeBolsa2" />
+
+    <TextView
+        android:id="@+id/txtTituloJuegodeBolsa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="@string/txtPresentacion1"
+        android:textColorHint="#FFEB3B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/txtValorActualAccion"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNombreJugadorBolsa"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/txtNombreJugadorBolsa"
+        app:layout_constraintTop_toBottomOf="@+id/txtValor" />
+
+    <ImageView
+        android:id="@+id/imgFlechaArriba"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtValorActualAccion"
+        app:layout_constraintStart_toStartOf="@+id/txtValorActualAccion"
+        app:layout_constraintTop_toBottomOf="@+id/txtValorActualAccion"
+        app:srcCompat="@drawable/flechaarriba" />
+
+    <ImageView
+        android:id="@+id/imgFlechaAbajo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtValorActualAccion"
+        app:layout_constraintStart_toStartOf="@+id/txtValorActualAccion"
+        app:layout_constraintTop_toBottomOf="@+id/txtValorActualAccion"
+        app:srcCompat="@drawable/flechaabajo" />
+
+    <Button
+        android:id="@+id/btnCompro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F51B5"
+        android:hint="@string/btnCompro"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtValorActualAccion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtValorActualAccion"
+        app:layout_constraintTop_toTopOf="@+id/imgFlechaAbajo" />
+
+    <Button
+        android:id="@+id/btnVendo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#3F51B5"
+        android:hint="@string/btnVendo"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtValorActualAccion"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtValorActualAccion"
+        app:layout_constraintTop_toBottomOf="@+id/txtValorActualAccion" />
+
+    <TextView
+        android:id="@+id/txtValor"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:hint="@string/txtValor"
+        app:layout_constraintEnd_toEndOf="@+id/txtNombreJugadorBolsa"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/txtNombreJugadorBolsa"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreJugadorBolsa" />
+
+    <TextView
+        android:id="@+id/txtAcciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/txtAcciones"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCompro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCompro"
+        app:layout_constraintTop_toBottomOf="@+id/btnCompro" />
+
+    <TextView
+        android:id="@+id/txtCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/txtCapital"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtAcciones"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtAcciones"
+        app:layout_constraintTop_toBottomOf="@+id/txtAcciones" />
+
+    <TextView
+        android:id="@+id/txtValorAcciones"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:gravity="right"
+        android:hint="@string/txtValorAcciones"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnVendo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnVendo"
+        app:layout_constraintTop_toBottomOf="@+id/btnVendo" />
+
+    <TextView
+        android:id="@+id/txtValorCapital"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:hint="@string/txtValorCapital"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtValorAcciones"
+        app:layout_constraintStart_toStartOf="@+id/txtValorAcciones"
+        app:layout_constraintTop_toBottomOf="@+id/txtValorAcciones" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="right"
+        android:hint="@string/txtTotal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtValorCapital"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtValorCapital"
+        app:layout_constraintTop_toBottomOf="@+id/txtValorCapital" />
+
+    <TextView
+        android:id="@+id/txtNumeroAcciones"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="right"
+        android:hint="@string/txtNumeroAcciones"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnVendo"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="@+id/btnCompro"
+        app:layout_constraintTop_toBottomOf="@+id/btnCompro" />
+
+</android.support.constraint.ConstraintLayout>
